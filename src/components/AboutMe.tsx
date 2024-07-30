@@ -131,7 +131,7 @@ export function AboutMe() {
             </ol>
           );
         })}
-        <div className="m-auto  flex md:mt-24 bg-tecMedium hover:bg-tecMediumLight/10 dark:bg-tecLight w-full rounded-xl ">
+        <div className="m-auto  flex md:mt-24 bg-tecMedium transition-all hover:bg-tecMediumLight/10 dark:bg-tecLight w-full rounded-xl ">
           <button className=" w-full h-full text-tecLight  dark:text-tecHeavy  py-2 rounded-2xl flex items-center justify-center gap-2">
             Download CV <IoArrowDown />
           </button>
