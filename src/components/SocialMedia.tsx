@@ -4,15 +4,15 @@ import { FaWhatsapp } from 'react-icons/fa6';
 const social = [
   {
     link: 'a',
-    icon: <FiInstagram className="h-8 w-8 text-tecLight dark:text-tecMedium" />,
+    icon: <FiInstagram className="h-6 w-6 text-tecLight dark:text-tecMedium" />,
   },
   {
     link: 'b',
-    icon: <PiLinkedinLogoBold className="h-8 w-8 text-tecLight dark:text-tecMedium " />,
+    icon: <PiLinkedinLogoBold className="h-6 w-6 text-tecLight dark:text-tecMedium " />,
   },
   {
     link: 'c',
-    icon: <FaWhatsapp className="h-8 w-8 text-tecLight dark:text-tecMedium" />,
+    icon: <FaWhatsapp className="h-6 w-6 text-tecLight dark:text-tecMedium" />,
   },
 ];
 export function SocialMedia() {

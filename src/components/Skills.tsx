@@ -39,7 +39,7 @@ export function Skills() {
               className="relative w-full h-full flex justify-center  items-center md:h-72 md:w-96  bg-black rounded-3xl "
             >
               <img
-                className="w-full h-full rounded-3xl scale-100 hover:blur-sm cursor-pointer  "
+                className="w-full h-full rounded-3xl scale-100 blur-sm cursor-pointer  "
                 alt={img.textAlt}
                 src={img.img}
               />
