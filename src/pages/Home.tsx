@@ -1,10 +1,11 @@
 import { Content } from '../components/Content';
+import { Jobs } from '../components/Jobs';
 import { Skills } from '../components/Skills';
-
+import { SocialMedia } from '../components/SocialMedia';
 
 export function Home() {
   return (
-    <section className="mt-10 h-full pb-10 m-y-5">
+    <section className="mt-10 h-full w-full pb-10 m-y-5">
       <div className="md:w-28 md:h-28 rounded-full bg-slate-300">
         {/* <img alt='profile' src='' />  */}
       </div>
@@ -16,7 +17,12 @@ export function Home() {
         since the 1500s, when an unknown printer took a galley of type
         and scrambled it to make a type specimen book.`}
       />
-   <Skills/>
+      <SocialMedia />
+      <Skills />
+
+      <div className="w-full h-full flex justify-between relative">
+        <Jobs />
+      </div>
     </section>
   );
 }
