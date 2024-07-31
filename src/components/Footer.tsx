@@ -34,7 +34,9 @@ export function Footer() {
         })}
       </div>
       <div className="mr-10">
-        <h2 className='text-tecLight text-sm dark:text-tecMedium'>@2024 Jairo Miguel. Todos os direitos reservados</h2>
+        <h2 className="text-tecLight text-sm dark:text-tecMedium">
+          @2024 Jairo Miguel. Todos os direitos reservados
+        </h2>
       </div>
     </footer>
   );

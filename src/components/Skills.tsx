@@ -26,7 +26,7 @@ const devImages = [
 ];
 export function Skills() {
   return (
-    <div className="transition-all">
+    <div className="transition-all my-20">
       <h1 className="text-white dark:text-tecHeavy font-bold text-[2rem] text-pretty uppercase mb-10">
         Habilidades
       </h1>
