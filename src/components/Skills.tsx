@@ -26,24 +26,24 @@ const devImages = [
 ];
 export function Skills() {
   return (
-    <div className="transition-all my-20">
+    <div className="transition-all my-20 ">
       <h1 className="text-white dark:text-tecHeavy font-bold text-[2rem] text-pretty uppercase mb-10">
         Habilidades
       </h1>
 
-      <div className="w-full md:flex items-center justify-around py-4  transition-all  ">
+      <div className=" md:flex items-center justify-around py-4  transition-all  gap-5 ">
         {devImages.map((img) => {
           return (
             <div
               key={img.textAlt}
-              className="relative w-full h-full flex justify-center  items-center md:h-72 md:w-96  bg-black rounded-3xl "
+              className="relative flex justify-center  items-center md:h-72 md:w-96  bg-black rounded-3xl "
             >
               <img
-                className="w-full h-full rounded-3xl scale-100 blur-sm cursor-pointer  "
+                className="w-full h-full rounded-3xl  blur-sm cursor-pointer  "
                 alt={img.textAlt}
                 src={img.img}
               />
-              <div className="text-2xl font-bold absolute rounded-3xl justify-center flex flex-col items-center  z-50 p-10 uppercase bg-black/70 text-slate-300 ">
+              <div className="md:text-2xl font-bold absolute rounded-3xl justify-center flex flex-col items-center  z-50 md:p-8 uppercase bg-black/70 text-slate-300 ">
                 {img.icon}
                 <h1>{img.title}</h1>
               </div>

@@ -1,7 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { MdOutlineDarkMode } from 'react-icons/md';
 import { CiLight } from 'react-icons/ci';
-
 import { useTheme } from '../store/ThemeContext';
 
 const routeLink = [
@@ -22,12 +21,13 @@ export function Header() {
   const { darkMode, toggleDarkMode } = useTheme();
   return (
     <header className="w-full flex justify-center relative">
-      <nav className="flex items-center px-5 py-2 mt-10 rounded-full  bg-tecMedium justify-center gap-x-4 border border-slate-500 ">
+      <nav className="flex items-center px-5 py-2 mt-10 rounded-full  bg-tecMedium dark:bg-white  shadow-sm shadow-black justify-center gap-x-4 border border-slate-500 ">
         {routeLink.map((link) => {
           return (
             <NavLink
+              className={`dark:text-black text-white`}
               style={({ isActive }) => ({
-                color: isActive ? '#4fd1c5' : 'white',
+                color: isActive ? '#4fd1c5' : '',
               })}
               key={link.title}
               to={link.path}
