@@ -9,19 +9,25 @@ const devImages = [
     textAlt: 'dev-1',
     img: dev1,
     title: 'ReactJS',
-    icon: <FaReact className="h-10 w-10 text-blue-300" />,
+    icon: (
+      <FaReact className="h-10 w-10 text-blue-300" />
+    ),
   },
   {
     textAlt: 'dev-2',
     img: dev2,
     title: 'VueJS',
-    icon: <FaVuejs className="h-10 w-10 text-green-300" />,
+    icon: (
+      <FaVuejs className="h-10 w-10 text-green-300" />
+    ),
   },
   {
     textAlt: 'dev-3',
     img: dev3,
     title: 'JavaScript',
-    icon: <IoLogoJavascript className="h-10 w-10 text-yellow-300" />,
+    icon: (
+      <IoLogoJavascript className="h-10 w-10 text-yellow-300" />
+    ),
   },
 ];
 export function Skills() {

@@ -20,7 +20,10 @@ export function Footer() {
       <div className="flex">
         {routeLink.map((link) => {
           return (
-            <ol key={link.title} className="flex first:ml-10  ">
+            <ol
+              key={link.title}
+              className="flex first:ml-10  "
+            >
               <li className="">
                 <NavLink
                   to={link.path}
@@ -35,7 +38,8 @@ export function Footer() {
       </div>
       <div className="mr-10">
         <h2 className="text-tecLight text-sm dark:text-tecMedium">
-          @2024 Jairo Miguel. Todos os direitos reservados
+          @2024 Jairo Miguel. Todos os direitos
+          reservados
         </h2>
       </div>
     </footer>

@@ -1,6 +1,9 @@
 import { FiInstagram } from 'react-icons/fi';
 import { PiLinkedinLogoBold } from 'react-icons/pi';
-import { FaWhatsapp, FaGithub } from 'react-icons/fa6';
+import {
+  FaWhatsapp,
+  FaGithub,
+} from 'react-icons/fa6';
 const social = [
   {
     name: 'Instagram',

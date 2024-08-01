@@ -38,10 +38,10 @@ export function Projects() {
   return (
     <div className="my-40">
       <Content
-        title="Projetos particulares que realizei para aprendizado e treinamento."
-        content="Alguns projetos ainda estão em desenvolvimento ou passam por melhorias. "
+        title="Projetos realizados para aprendizado e treinamento."
+        content="Alguns projetos ainda estão em desenvolvimento ou passando por melhorias. "
       />
-      <div className="mt-40 ">
+      <div className="mt-40">
         <ul className="grid md:grid-cols-3 gap-0">
           {projects.map((project) => {
             return (
@@ -51,7 +51,7 @@ export function Projects() {
                 target="blank"
               >
                 <li className="md:h-72 md:w-80 py-6 px-6 rounded-md flex flex-col justify-center dark:border hover:bg-tecMedium dark:hover:bg-tecLight/50 transition duration-200">
-                  <div className="mb-5 rounded-full  border dark:border-black flex justify-center items-center h-12 w-12 p-2">
+                  <div className="mb-5 rounded-full border dark:border-black flex justify-center items-center h-12 w-12 p-2">
                     {project.icon}
                   </div>
                   <div>
