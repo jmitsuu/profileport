@@ -59,7 +59,7 @@ const courses = [
 ];
 export function AboutMe() {
   return (
-    <div className=" md:flex border justify-around w-full border-tecMedium px-5 py-10 rounded-2xl  my-20 ">
+    <div className=" md:flex border justify-around w-full border-tecMedium dark:border-tecSuperLight px-5 py-10 rounded-2xl  my-20 ">
       <div className="md:w-[430px] ">
         <div className="flex items-center ">
           <PiBagSimpleFill className="w-8 h-8 mr-2 text-tecSuperLight dark:text-tecHeavy" />

@@ -16,7 +16,7 @@ const routeLink = [
 ];
 export function Footer() {
   return (
-    <footer className="w-full flex items-center justify-between container mx-auto h-32 border-t dark:text-tecHeavy  border-tecMedium">
+    <footer className="w-full flex items-center justify-between container mx-auto h-32 border-t dark:border-tecSuperLight   border-tecMedium">
       <div className="flex">
         {routeLink.map((link) => {
           return (

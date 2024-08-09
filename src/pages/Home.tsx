@@ -19,7 +19,7 @@ export function Home() {
         title={
           'Analise e Desenvolvimento de Sistemas'
         }
-        content={`Ola! eu sou o Jairo, esse é o meu portfólio voltado para a area Front End, com alguns dados projetos desenvolvidos até o momento.`}
+        content={`Ola! eu sou o Jairo, criei esse portfólio para compartilhar alguns projetos desenvolvidos até o momento. Caso queiram realizar contato ou deixar sua sugestão sobre algo, minhas redes sociais estão logo abaixo.`}
       />
       <SocialMedia />
       <Skills />
