@@ -32,7 +32,7 @@ const devImages = [
 ];
 export function Skills() {
   return (
-    <div className="transition-all my-20 ">
+    <div className="transition-all md:my-20 ">
       <h1 className="text-white dark:text-tecHeavy font-bold text-[2rem] text-pretty uppercase mb-10">
         Habilidades
       </h1>
@@ -42,14 +42,14 @@ export function Skills() {
           return (
             <div
               key={img.textAlt}
-              className="relative flex justify-center  items-center md:h-72 md:w-96  bg-black rounded-3xl "
+              className="relative flex justify-center w-full h-60 mx-auto md:mb-0 mb-8  items-center  bg-black rounded-3xl "
             >
               <img
                 className="w-full h-full rounded-3xl  blur-sm cursor-pointer  "
                 alt={img.textAlt}
                 src={img.img}
               />
-              <div className="md:text-2xl font-bold absolute rounded-3xl justify-center flex flex-col items-center  z-50 md:p-8 uppercase bg-black/70 text-slate-300 ">
+              <div className="md:text-2xl font-bold absolute md:rounded-3xl rounded-2xl justify-center flex flex-col items-center   z-50 md:p-8 p-6 uppercase bg-black/70 text-slate-300 ">
                 {img.icon}
                 <h1>{img.title}</h1>
               </div>

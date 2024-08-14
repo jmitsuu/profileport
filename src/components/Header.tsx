@@ -21,11 +21,11 @@ export function Header() {
   const { darkMode, toggleDarkMode } = useTheme();
   return (
     <header className="w-full flex justify-center relative">
-      <nav className="flex items-center px-5 py-2 mt-10 rounded-full  bg-tecMedium dark:bg-white  shadow-sm shadow-black justify-center gap-x-4 border border-slate-500 ">
+      <nav className="flex items-center px-5 py-2 mt-10 rounded-full  bg-tecMedium dark:bg-white  justify-center gap-x-4 border border-slate-500 ">
         {routeLink.map((link) => {
           return (
             <NavLink
-              className={`dark:text-black text-white`}
+              className={`dark:text-black text-white uppercase`}
               style={({ isActive }) => ({
                 color: isActive ? '#4fd1c5' : '',
               })}
@@ -37,7 +37,7 @@ export function Header() {
           );
         })}
       </nav>
-      <div className="absolute right-10 top-10 text-white">
+      <div className="absolute md:right-10 right-2 top-10 text-white">
         {darkMode ? (
           <MdOutlineDarkMode
             className="w-10 h-10 cursor-pointer dark:text-black"
