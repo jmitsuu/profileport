@@ -2,7 +2,7 @@ export function About() {
   return (
     <section className="flex w-full h-full items-center justify-center mb-10">
       <div>
-        <article className="mt-20 space-y-5">
+        <article className="md:mt-40 mt-20 space-y-5">
           <h2 className="text-tecSuperLight dark:text-tecHeavy uppercase font-bold md:text-5xl mb-10">
             Sobre mim
           </h2>

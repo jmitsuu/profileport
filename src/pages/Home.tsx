@@ -9,7 +9,7 @@ export function Home() {
       <div className="md:w-36 md:h-36 flex justify-center items-center border-2 border-tecMediumLight dark:border-tecHeavy rounded-full bg-slate-300">
         <img
           alt="profile"
-          className=" rounded-full md:w-36 md:h-36 w-full"
+          className=" rounded-full w-full h-full"
           width={144}
           height={144}
           src="https://avatars.githubusercontent.com/u/78458400?s=400&u=f3472c0310230a7b10a44d530d0e1de1c88d59a5&v=4"

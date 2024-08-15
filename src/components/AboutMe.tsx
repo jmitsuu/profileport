@@ -60,7 +60,7 @@ const courses = [
 export function AboutMe() {
   return (
     <div className=" md:flex border justify-around w-full border-tecMedium dark:border-tecSuperLight px-5 py-10 rounded-2xl  my-20 ">
-      <div className="md:w-[430px] ">
+      <div className="md:w-[430px]  ">
         <div className="flex items-center ">
           <PiBagSimpleFill className="w-8 h-8 mr-2 text-tecSuperLight dark:text-tecHeavy" />
           <h1 className=" text-tecSuperLight dark:text-tecHeavy border-b border-tecSuperLight dark:border-tecHeavy  font-bold text-2xl">
@@ -71,27 +71,27 @@ export function AboutMe() {
           return (
             <ol
               key={work.role}
-              className="mt-6 space-y-6 "
+              className="mt-6 space-y-6"
             >
               <li className="flex gap-6 ">
                 <div className="flex relative   w-10 h-10 mt-1 flex-none items-center justify-center">
                   <img
                     src={work.icon}
                     alt="img"
-                    className="w-10 h-10 rounded-full"
+                    className="md:w-10 md:h-10 h-8 w-8 rounded-full"
                   />
                 </div>
                 <dl className=" flex flex-auto flex-wrap gap-x-2 ">
                   <dt className="sr-only">
                     Company
                   </dt>
-                  <dd className="w-full flex-none text-md font-bold text-tecLight dark:text-tecHeavy">
+                  <dd className="w-full flex-none md:text-md text-xs font-bold text-tecLight dark:text-tecHeavy">
                     {work.company}
                   </dd>
                   <dt className="sr-only">
                     Role
                   </dt>
-                  <dd className="text-sm  text-tecLight dark:text-tecHeavy">
+                  <dd className="md:text-sm text-xs  text-tecLight dark:text-tecHeavy">
                     {work.role}
                   </dd>
                   <dt className="sr-only">
@@ -139,13 +139,13 @@ export function AboutMe() {
                   <dt className="sr-only">
                     Company
                   </dt>
-                  <dd className="w-full flex-none text-md font-bold text-tecLight dark:text-tecHeavy">
+                  <dd className="w-full flex-none md:text-md text-xs font-bold text-tecLight dark:text-tecHeavy">
                     {work.company}
                   </dd>
                   <dt className="sr-only">
                     Role
                   </dt>
-                  <dd className="text-sm  text-tecLight dark:text-tecHeavy">
+                  <dd className="md:text-sm text-xs  text-tecLight dark:text-tecHeavy">
                     {work.role}
                   </dd>
                   <dt className="sr-only">
@@ -167,7 +167,7 @@ export function AboutMe() {
             </ol>
           );
         })}
-        <div className="m-auto  flex md:mt-24 bg-tecMedium transition-all hover:bg-tecMediumLight/10 dark:bg-tecLight w-full rounded-xl ">
+        <div className="m-auto  flex md:mt-24 mt-8 bg-tecMedium transition-all hover:bg-tecMediumLight/10 dark:bg-tecLight w-full rounded-xl ">
           <a href='https://drive.google.com/uc?export=download&id=1KOpnKQNc35JVGGhB6eCca6Y_ONmvfdk6' className=" w-full h-full text-tecLight  dark:text-tecHeavy  py-2 rounded-2xl flex items-center justify-center gap-2">
             Download CV <IoArrowDown />
           </a>

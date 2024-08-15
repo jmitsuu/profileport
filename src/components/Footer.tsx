@@ -16,7 +16,7 @@ const routeLink = [
 ];
 export function Footer() {
   return (
-    <footer className="w-full flex items-center justify-between container mx-auto h-32 border-t dark:border-tecSuperLight   border-tecMedium">
+    <footer className="w-full flex md:flex-row flex-col items-center md:justify-between justify-center container mx-auto h-32 border-t dark:border-tecSuperLight   border-tecMedium">
       <div className="flex">
         {routeLink.map((link) => {
           return (
@@ -36,8 +36,8 @@ export function Footer() {
           );
         })}
       </div>
-      <div className="mr-10">
-        <h2 className="text-tecLight text-sm dark:text-tecMedium">
+      <div className="md:mr-10">
+        <h2 className="text-tecLight md:text-sm text-xs md:mt-0 mt-4  dark:text-tecMedium">
           @2024 Jairo Miguel. Todos os direitos
           reservados
         </h2>

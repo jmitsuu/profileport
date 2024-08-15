@@ -21,7 +21,7 @@ export function Header() {
   const { darkMode, toggleDarkMode } = useTheme();
   return (
     <header className="w-full flex justify-center relative">
-      <nav className="flex items-center px-5 py-2 mt-10 rounded-full  bg-tecMedium dark:bg-white  justify-center gap-x-4 border border-slate-500 ">
+      <nav className="flex items-center px-5 py-2 mt-10 rounded-full  bg-tecMedium dark:bg-white text-xs md:text-lg justify-center gap-x-4 border border-slate-500 ">
         {routeLink.map((link) => {
           return (
             <NavLink
