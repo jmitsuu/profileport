@@ -1,8 +1,10 @@
 on: 
- push:
-  branches:
-   -main
+  push:
+    branches:
+      - main
+
 name: 🚀 Deploy website on push
+
 jobs:
   deploy:
     name: 🎉 Deploy
@@ -10,14 +12,18 @@ jobs:
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2
-      - name: Install dependencies
-              run: npm install
-            - name: Build
-              run: npm run build
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build
+      run: npm run build
+
     - name: 📂 Sync files
       uses: Penguibird/FTP-Deploy-Action@4.2.0
       with:
-        server: ${{ secrets.ftp_host}}
-        username: j${{ secrets.ftp_user}}
+        server: ${{ secrets.ftp_host }}
+        username: ${{ secrets.ftp_user }}
         password: ${{ secrets.ftp_password }}
+        local-dir: dist
         server-dir: public_html/
