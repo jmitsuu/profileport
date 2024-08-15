@@ -10,6 +10,10 @@ jobs:
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2
+      - name: Install dependencies
+              run: npm install
+            - name: Build
+              run: npm run build
     - name: 📂 Sync files
       uses: Penguibird/FTP-Deploy-Action@4.2.0
       with:
@@ -17,3 +21,4 @@ jobs:
         username: j${{ secrets.ftp_user}}
         password: ${{ secrets.ftp_password }}
         server-dir: public_html/
+         publish_dir: ./dist
