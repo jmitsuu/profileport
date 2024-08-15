@@ -17,4 +17,3 @@ jobs:
         username: j${{ secrets.ftp_user}}
         password: ${{ secrets.ftp_password }}
         server-dir: public_html/
-         publish_dir: ./dist
