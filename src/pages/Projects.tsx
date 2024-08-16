@@ -64,7 +64,7 @@ export function Projects() {
                   href={`${project.link}`}
                   target="blank"
                 >
-                  <li className="md:h-72 md:w-80 py-6 px-6 rounded-md md:mb-0 mb-2  flex flex-col justify-center border border-tecMedium dark:border hover:bg-tecMedium dark:hover:bg-tecLight/50 transition duration-200">
+                  <li className="md:h-72 md:w-80 py-6 px-6 rounded-md md:mb-0 mb-5  flex flex-col justify-center border border-tecMedium dark:border hover:bg-tecMedium dark:hover:bg-tecLight/50 transition duration-200">
                     <div className="mb-5 rounded-full border dark:border-black flex justify-center items-center h-12 w-12 p-2">
                       {project.icon}
                     </div>

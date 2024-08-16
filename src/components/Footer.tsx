@@ -1,20 +1,8 @@
 import { NavLink } from 'react-router-dom';
+import RouterLink from '../utils/RouterLink';
 
-const routeLink = [
-  {
-    path: '/',
-    title: 'Home',
-  },
-  {
-    path: '/projects',
-    title: 'Projetos',
-  },
-  {
-    path: '/about',
-    title: 'Sobre',
-  },
-];
 export function Footer() {
+  const { routeLink } = RouterLink();
   return (
     <footer className="w-full flex md:flex-row flex-col items-center md:justify-between justify-center container mx-auto h-32 border-t dark:border-tecSuperLight   border-tecMedium">
       <div className="flex">
@@ -38,8 +26,11 @@ export function Footer() {
       </div>
       <div className="md:mr-10">
         <h2 className="text-tecLight md:text-sm text-xs md:mt-0 mt-4  dark:text-tecMedium">
-          @2024 Jairo Miguel. Todos os direitos
-          reservados
+          @2024 -
+          <span className="text-tecSuperLight">
+            {' '}
+            Desenvolvido por Jairo Miguel
+          </span>
         </h2>
       </div>
     </footer>

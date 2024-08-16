@@ -2,23 +2,11 @@ import { NavLink } from 'react-router-dom';
 import { MdOutlineDarkMode } from 'react-icons/md';
 import { CiLight } from 'react-icons/ci';
 import { useTheme } from '../store/ThemeContext';
+import RouterLink from '../utils/RouterLink';
 
-const routeLink = [
-  {
-    path: '/',
-    title: 'Home',
-  },
-  {
-    path: '/projects',
-    title: 'Projetos',
-  },
-  {
-    path: '/about',
-    title: 'Sobre',
-  },
-];
 export function Header() {
   const { darkMode, toggleDarkMode } = useTheme();
+  const { routeLink } = RouterLink();
   return (
     <header className="w-full flex justify-center relative">
       <nav className="flex items-center px-5 py-2 mt-10 rounded-full  bg-tecMedium dark:bg-white text-xs md:text-lg justify-center gap-x-4 border border-slate-500 ">
