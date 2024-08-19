@@ -7,14 +7,14 @@ import {
 const social = [
   {
     name: 'Instagram',
-    link: 'a',
+    link: 'https://www.instagram.com/jairomiiguel/',
     icon: (
       <FiInstagram className="h-6 w-6 text-tecLight dark:text-tecMedium" />
     ),
   },
   {
     name: 'LinkedIn',
-    link: 'b',
+    link: 'https://www.linkedin.com/in/jairo-miguel-703121146/',
     icon: (
       <PiLinkedinLogoBold className="h-6 w-6 text-tecLight dark:text-tecMedium " />
     ),
