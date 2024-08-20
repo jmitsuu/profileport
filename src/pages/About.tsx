@@ -1,3 +1,5 @@
+import { SocialMedia } from "../components/SocialMedia";
+
 export function About() {
   return (
     <section className="flex w-full h-full items-center justify-center mb-10">
@@ -41,7 +43,9 @@ export function About() {
             com a plataforma de rastreamento.
           </p>
         </article>
+        <SocialMedia />
       </div>
+
     </section>
   );
 }
