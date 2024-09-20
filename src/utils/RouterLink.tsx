@@ -7,11 +7,7 @@ export default function RouterLink(){
     {
       path: '/projects',
       title: 'Projetos',
-    },
-    {
-      path: '/about',
-      title: 'Sobre',
-    },
+    }
   ];
   return {routeLink}
 }
