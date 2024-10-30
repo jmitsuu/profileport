@@ -21,7 +21,7 @@ const projects = [
   },
   {
     icon: (
-      <BiSolidShoppingBags className="h-8 w-8 text-tecSuperLight dark:text-tecHeavy" />
+      <BiSolidShoppingBags className="h-8  w-8 text-tecSuperLight dark:text-tecHeavy" />
     ),
     tagUrl: 'vercel.app',
     title: 'Movies',
