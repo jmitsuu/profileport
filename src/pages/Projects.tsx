@@ -8,7 +8,6 @@ import {
   Helmet,
   HelmetProvider,
 } from 'react-helmet-async';
-import project from '../assets/images/dev/proje.png';
 const projects = [
   {
     icon: (
@@ -51,16 +50,11 @@ export function Projects() {
         />
       </Helmet>
 
-      <div className="md:my-40 my-10">
+      <div className="my-10">
         <div className="relative md:flex justify-between items-center">
           <Content
             title="Projetos realizados para aprendizado e treinamento."
             content="Alguns projetos ainda estão em desenvolvimento ou passando por melhorias. "
-          />
-          <img
-            src={project}
-            alt="project-photo"
-            className=" md:h-80 h-32 mx-auto opacity-40 absolute top-0 right-0 md:mt-0 mt-4 "
           />
         </div>
 

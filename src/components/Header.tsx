@@ -9,7 +9,7 @@ export function Header() {
   const { routeLink } = RouterLink();
   return (
     <header className="w-full flex justify-center relative">
-      <nav className="flex items-center px-5 py-2 mt-10 rounded-full  bg-tecMedium dark:bg-white text-xs md:text-lg justify-center gap-x-4 border border-slate-500 ">
+      <nav className="flex items-center px-5 py-2 mt-10 rounded-full  bg-tecMedium dark:bg-white text-lg mb-10 md:text-lg justify-center gap-x-4 border border-slate-500 ">
         {routeLink.map((link) => {
           return (
             <NavLink
@@ -25,7 +25,7 @@ export function Header() {
           );
         })}
       </nav>
-      <div className="absolute md:right-10 right-2 top-10 text-white">
+      <div className="absolute md:right-10 right-4 top-10 text-white">
         {darkMode ? (
           <MdOutlineDarkMode
             className="w-10 h-10 cursor-pointer dark:text-black"

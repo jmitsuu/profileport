@@ -59,7 +59,7 @@ const courses = [
 ];
 export function AboutMe() {
   return (
-    <div className=" md:flex border justify-around w-full border-tecMedium dark:border-tecSuperLight px-5 py-10 rounded-2xl  my-20 ">
+    <div className=" md:flex border justify-around w-full border-tecMedium dark:border-tecSuperLight px-5 py-10 rounded-2xl   ">
       <div className="md:w-[430px]  ">
         <div className="flex items-center ">
           <PiBagSimpleFill className="w-8 h-8 mr-2 text-tecSuperLight dark:text-tecHeavy" />
@@ -168,7 +168,10 @@ export function AboutMe() {
           );
         })}
         <div className="m-auto  flex md:mt-24 mt-8 bg-tecMedium transition-all hover:bg-tecMediumLight/10 dark:bg-tecLight w-full rounded-xl ">
-          <a href='https://drive.google.com/uc?export=download&id=1KOpnKQNc35JVGGhB6eCca6Y_ONmvfdk6' className=" w-full h-full text-tecLight  dark:text-tecHeavy  py-2 rounded-2xl flex items-center justify-center gap-2">
+          <a
+            href="https://drive.google.com/uc?export=download&id=1KOpnKQNc35JVGGhB6eCca6Y_ONmvfdk6"
+            className=" w-full h-full text-tecLight  dark:text-tecHeavy  py-2 rounded-2xl flex items-center justify-center gap-2"
+          >
             Download CV <IoArrowDown />
           </a>
         </div>

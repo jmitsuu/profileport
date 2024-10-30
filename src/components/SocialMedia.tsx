@@ -36,7 +36,7 @@ const social = [
 ];
 export function SocialMedia() {
   return (
-    <div className="flex gap-5 md:mb-20 mb-10 mt-10 ">
+    <div className="flex gap-5 md:mb-20 mb-10 mt-10 mx-auto ">
       {social.map((icon) => {
         return (
           <a
