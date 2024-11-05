@@ -8,8 +8,11 @@ export function Header() {
   const { darkMode, toggleDarkMode } = useTheme();
   const { routeLink } = RouterLink();
   return (
-    <header className="w-full flex justify-center relative">
-      <nav className="flex items-center px-5 py-2 mt-10 rounded-full  bg-tecMedium dark:bg-white text-lg mb-10 md:text-lg justify-center gap-x-4 border border-slate-500 ">
+    <header className="w-full flex justify-center relative container mx-auto h-24">
+      <nav className="lg:flex hidden px-5 py-2 mt-10 relative w-full gap-x-20  text-lg mb-10 md:text-lg justify-center ">
+        <h1 className="text-[#38bdf8] absolute left-0">
+          Jairo Miguel
+        </h1>
         {routeLink.map((link) => {
           return (
             <NavLink

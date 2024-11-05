@@ -9,11 +9,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        tecHeavy: '#161616',
-        tecMedium: '#333435',
-        tecMediumLight: '#94A1A6',
-        tecLight: '#AAB7BF',
-        tecSuperLight: '#EBF0F2',
+        tecHeavy: '#0f172a',
+        tecMedium: '#0f170a',
+        tecMediumLight: '#273149',
+        tecLight: '#3f4969 ',
+        tecSuperLight: '#576289 ',
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       },
     },
 
