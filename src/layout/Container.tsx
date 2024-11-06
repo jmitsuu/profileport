@@ -1,9 +1,11 @@
+import { ReactNode } from "react";
+
 interface element {
-  children: JSX.Element;
+  children: ReactNode;
 }
 export function Container({ children }: element) {
   return (
-    <div className=" min-h-screen md:px-20 px-10 ">
+    <div className=" min-h-screen  ">
       {children}
     </div>
   );

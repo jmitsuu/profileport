@@ -3,10 +3,10 @@ import tracetec from '../assets/images/icons/tracetec.jpg';
 import tanimara from '../assets/images/icons/taniamara.jpg';
 import unifael from '../assets/images/icons/unifael.jpg';
 import { PiBagSimpleFill } from 'react-icons/pi';
-import {
-  IoArrowDown,
-  IoSchoolSharp,
-} from 'react-icons/io5';
+import { IoSchoolSharp } from 'react-icons/io5';
+import { CardJobsSchool } from './CardJobsSchool';
+import { SocialMedia } from './SocialMedia';
+import { Download } from './Download';
 
 const jobs = [
   {
@@ -59,123 +59,82 @@ const courses = [
 ];
 export function AboutMe() {
   return (
-    <div className=" md:flex border justify-around w-full border-tecMedium dark:border-tecSuperLight px-5 py-10 rounded-2xl   ">
-      <div className="md:w-[430px]  ">
-        <div className="flex items-center ">
-          <PiBagSimpleFill className="w-8 h-8 mr-2 text-tecSuperLight dark:text-tecHeavy" />
-          <h1 className=" text-tecSuperLight dark:text-tecHeavy border-b border-tecSuperLight dark:border-tecHeavy  font-bold text-2xl">
-            Trabalhos
+    <section className="w-full min-h-screen">
+      <div className="w-full lg:flex flex-1">
+        <div className="flex flex-col items-center gap-y-3">
+          <div className="rounded-full p-2 border-2 border-[#38bdf8]">
+            <img
+              src="https://avatars.githubusercontent.com/u/78458400?v=4"
+              alt="img github"
+              className="w-44 rounded-full"
+            />
+          </div>
+          <h1 className="text-2xl text-slate-300">
+            Jairo Miguel
           </h1>
+          <SocialMedia />
         </div>
-        {jobs.map((work) => {
-          return (
-            <ol
-              key={work.role}
-              className="mt-6 space-y-6"
-            >
-              <li className="flex gap-6 ">
-                <div className="flex relative   w-10 h-10 mt-1 flex-none items-center justify-center">
-                  <img
-                    src={work.icon}
-                    alt="img"
-                    className="md:w-10 md:h-10 h-8 w-8 rounded-full"
-                  />
-                </div>
-                <dl className=" flex flex-auto flex-wrap gap-x-2 ">
-                  <dt className="sr-only">
-                    Company
-                  </dt>
-                  <dd className="w-full flex-none md:text-md text-xs font-bold text-tecLight dark:text-tecHeavy">
-                    {work.company}
-                  </dd>
-                  <dt className="sr-only">
-                    Role
-                  </dt>
-                  <dd className="md:text-sm text-xs  text-tecLight dark:text-tecHeavy">
-                    {work.role}
-                  </dd>
-                  <dt className="sr-only">
-                    Date
-                  </dt>
-                  <dd className="ml-auto text-xs text-zinc-400 dark:text-zinc-500 ">
-                    <time dateTime="2013">
-                      {work.initDate}
-                    </time>
-                    <span aria-hidden="true">
-                      -
-                    </span>
-                    <time dateTime="2014">
-                      {work.endDate}
-                    </time>
-                  </dd>
-                </dl>
-              </li>
-            </ol>
-          );
-        })}
-      </div>
-      <div className="md:w-[430px]  ">
-        <div className="flex items-center ">
-          <IoSchoolSharp className="w-8 h-8 mr-2 text-tecSuperLight dark:text-tecHeavy" />
-          <h1 className=" text-tecSuperLight dark:text-tecHeavy border-b border-tecSuperLight dark:border-tecHeavy  font-bold text-2xl">
-            Estudos
+        <div className="md:ml-52 lg:px-0 p-6 flex-col justify-center items-center">
+          <h1 className="text-slate-300 text-3xl uppercase font-bold md:text-left text-center">
+            Sobre
           </h1>
-        </div>
-        {courses.map((work) => {
-          return (
-            <ol
-              key={work.role}
-              className="mt-6 space-y-6 "
-            >
-              <li className="flex gap-6 ">
-                <div className="flex relative w-10 h-10 mt-1 flex-none items-center justify-center">
-                  <img
-                    src={work.icon}
-                    alt="img"
-                    className="w-10 h-10 rounded-full"
-                  />
-                </div>
-                <dl className=" flex flex-auto flex-wrap gap-x-2 ">
-                  <dt className="sr-only">
-                    Company
-                  </dt>
-                  <dd className="w-full flex-none md:text-md text-xs font-bold text-tecLight dark:text-tecHeavy">
-                    {work.company}
-                  </dd>
-                  <dt className="sr-only">
-                    Role
-                  </dt>
-                  <dd className="md:text-sm text-xs  text-tecLight dark:text-tecHeavy">
-                    {work.role}
-                  </dd>
-                  <dt className="sr-only">
-                    Date
-                  </dt>
-                  <dd className="ml-auto text-xs text-zinc-400 dark:text-zinc-500 ">
-                    <time dateTime="2013">
-                      {work.initDate}
-                    </time>
-                    <span aria-hidden="true">
-                      -
-                    </span>
-                    <time dateTime="2014">
-                      {work.endDate}
-                    </time>
-                  </dd>
-                </dl>
-              </li>
-            </ol>
-          );
-        })}
-        <div className="m-auto  flex md:mt-24 mt-8 bg-tecMedium transition-all hover:bg-tecMediumLight/10 dark:bg-tecLight w-full rounded-xl ">
-          <a
-            href="https://drive.google.com/uc?export=download&id=1KOpnKQNc35JVGGhB6eCca6Y_ONmvfdk6"
-            className=" w-full h-full text-tecLight  dark:text-tecHeavy  py-2 rounded-2xl flex items-center justify-center gap-2"
-          >
-            Download CV <IoArrowDown />
-          </a>
+          <article className="mt-10">
+            <p className="text-slate-400 dark:text-tecMedium md:text-2xl">
+              Trabalho com tecnologias
+              relacionadas ao desenvolvimento
+              Front End, desde 2022. Realizei
+              especializações em VueJS e ReactJS.
+              Trabalhei na area de rastreamento
+              veicular, prestava serviços de
+              manutenção aos sites e integração de
+              api de diversos sistemas.
+            </p>
+          </article>
         </div>
       </div>
-    </div>
+      <div className="md:flex border-t border-[#38bdf8] pt-20 justify-between w-full  dark:border-tecSuperLight px-5 py-10">
+        <div className="md:w-[530px]">
+          <div className="flex items-center">
+            <PiBagSimpleFill className="w-8 h-8 mr-2 text-slate-300 dark:text-tecHeavy" />
+            <h1 className=" text-slate-300 dark:text-tecHeavy border-b border-[#38bdf8] dark:border-tecHeavy  font-bold text-2xl">
+              Trabalhos
+            </h1>
+          </div>
+          {jobs.map((work) => {
+            return (
+              <CardJobsSchool
+                key={work.role}
+                role={work.role}
+                icon={work.icon}
+                company={work.company}
+                initDate={work.initDate}
+                endDate={work.endDate}
+              />
+            );
+          })}
+        </div>
+        <div className="md:w-[530px] md:mt-0 mt-10">
+          <div className="flex items-center ">
+            <IoSchoolSharp className="w-8 h-8 mr-2 text-slate-300 dark:text-tecHeavy" />
+            <h1 className=" text-slate-300 dark:text-tecHeavy border-b border-[#38bdf8] dark:border-tecHeavy  font-bold text-2xl">
+              Estudos
+            </h1>
+          </div>
+          {courses.map((work) => {
+            return (
+              <CardJobsSchool
+                key={work.role}
+                role={work.role}
+                icon={work.icon}
+                company={work.company}
+                initDate={work.initDate}
+                endDate={work.endDate}
+              />
+            );
+          })}
+          <Download />
+        </div>
+      </div>
+    </section>
   );
 }

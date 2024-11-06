@@ -1,14 +1,14 @@
 import { NavLink } from 'react-router-dom';
-import { MdOutlineDarkMode } from 'react-icons/md';
-import { CiLight } from 'react-icons/ci';
-import { useTheme } from '../store/ThemeContext';
+// import { MdOutlineDarkMode } from 'react-icons/md';
+// import { CiLight } from 'react-icons/ci';
+// import { useTheme } from '../store/ThemeContext';
 import RouterLink from '../utils/RouterLink';
 
 export function Header() {
-  const { darkMode, toggleDarkMode } = useTheme();
+  // const { darkMode, toggleDarkMode } = useTheme();
   const { routeLink } = RouterLink();
   return (
-    <header className="w-full flex justify-center relative container mx-auto h-24">
+    <header className="w-full flex justify-center relative container mx-auto h-24 ">
       <nav className="lg:flex hidden px-5 py-2 mt-10 relative w-full gap-x-20  text-lg mb-10 md:text-lg justify-center ">
         <h1 className="text-[#38bdf8] absolute left-0">
           Jairo Miguel
@@ -16,9 +16,9 @@ export function Header() {
         {routeLink.map((link) => {
           return (
             <NavLink
-              className={`dark:text-black text-white uppercase`}
+              className={`dark:text-black text-slate-400 uppercase font-bold`}
               style={({ isActive }) => ({
-                color: isActive ? '#4fd1c5' : '',
+                color: isActive ? '#38bdf8' : '',
               })}
               key={link.title}
               to={link.path}
@@ -28,7 +28,7 @@ export function Header() {
           );
         })}
       </nav>
-      <div className="absolute md:right-10 right-4 top-10 text-white">
+      {/* <div className="absolute md:right-10 right-4 top-10 text-white">
         {darkMode ? (
           <MdOutlineDarkMode
             className="w-10 h-10 cursor-pointer dark:text-black"
@@ -40,7 +40,7 @@ export function Header() {
             onClick={toggleDarkMode}
           />
         )}
-      </div>
+      </div> */}
     </header>
   );
 }
