@@ -11,7 +11,7 @@ export function Content({
 }: typeContent) {
   return (
     <main className=" w-full z-50  md:mb-10 mx-auto lg:flex justify-between">
-      <div className="lg:w-[800px] text-balance md:text-left text-center mt-20">
+      <div className="lg:w-[600px] text-balance md:text-left text-center mt-20">
         <h2 className="text-[#38bdf8] text-xl">
           {' '}
           {title}

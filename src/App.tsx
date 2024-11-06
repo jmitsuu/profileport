@@ -3,7 +3,8 @@ import { Footer } from './components/Footer';
 import { Container } from './layout/Container';
 import { Home } from './pages/Home';
 import { Projects } from './pages/Projects';
-import { AboutMe } from './components/AboutMe';
+import { AboutMe } from './pages/AboutMe';
+import { Skills } from './components/Skills';
 function App() {
   return (
     <main className=" min-h-screen bg-gradient-radial from-70% from-tecHeavy via-100% via-tecMedium to-tecHeavy dark:bg-white">
@@ -12,6 +13,7 @@ function App() {
         <Container>
           <Home />
           <AboutMe />
+          <Skills />
           <Projects />
         </Container>
         <Footer />

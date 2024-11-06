@@ -22,8 +22,8 @@ export function Home() {
     };
   }, [scrollY]);
   return (
-    <section className="mt-10  w-full pb-10 m-y-5 relative">
-      <div className="mx-auto h-screen lg:flex md:justify-between justify-center mt-40">
+    <section className="mt-10  w-full relative h-screen">
+      <div className="mx-auto  lg:flex md:justify-between justify-center mt-40">
         <div className="">
           <Content
             title={'Desenvolvedor Front-End.'}

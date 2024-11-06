@@ -4,9 +4,10 @@ import tanimara from '../assets/images/icons/taniamara.jpg';
 import unifael from '../assets/images/icons/unifael.jpg';
 import { PiBagSimpleFill } from 'react-icons/pi';
 import { IoSchoolSharp } from 'react-icons/io5';
-import { CardJobsSchool } from './CardJobsSchool';
-import { SocialMedia } from './SocialMedia';
-import { Download } from './Download';
+import { CardJobsSchool } from '../components/CardJobsSchool';
+import { SocialMedia } from '../components/SocialMedia';
+import { Download } from '../components/Download';
+import { TitleIcon } from '../components/icon/TitleIcon';
 
 const jobs = [
   {
@@ -59,8 +60,8 @@ const courses = [
 ];
 export function AboutMe() {
   return (
-    <section className="w-full min-h-screen">
-      <div className="w-full lg:flex flex-1">
+    <section className="w-full min-h-screen  border-t border-[#38bdf8] pt-40">
+      <div className="w-full lg:flex flex-1 mb-10">
         <div className="flex flex-col items-center gap-y-3">
           <div className="rounded-full p-2 border-2 border-[#38bdf8]">
             <img
@@ -75,8 +76,8 @@ export function AboutMe() {
           <SocialMedia />
         </div>
         <div className="md:ml-52 lg:px-0 p-6 flex-col justify-center items-center">
-          <h1 className="text-slate-300 text-3xl uppercase font-bold md:text-left text-center">
-            Sobre
+          <h1 className="text-slate-300 text-3xl uppercase font-bold md:text-left text-center flex items-center gap-x-2">
+           <TitleIcon cn='h-6' /> Sobre
           </h1>
           <article className="mt-10">
             <p className="text-slate-400 dark:text-tecMedium md:text-2xl">
@@ -92,7 +93,7 @@ export function AboutMe() {
           </article>
         </div>
       </div>
-      <div className="md:flex border-t border-[#38bdf8] pt-20 justify-between w-full  dark:border-tecSuperLight px-5 py-10">
+      <div className="md:flex  pt-20 justify-between w-full  dark:border-tecSuperLight px-5 py-10">
         <div className="md:w-[530px]">
           <div className="flex items-center">
             <PiBagSimpleFill className="w-8 h-8 mr-2 text-slate-300 dark:text-tecHeavy" />
