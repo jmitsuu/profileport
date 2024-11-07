@@ -22,7 +22,7 @@ export function Home() {
     };
   }, [scrollY]);
   return (
-    <section className="mt-10  w-full relative h-screen">
+    <section className="mt-10  w-full relative h-screen" id='home'>
       <div className="mx-auto  lg:flex md:justify-between justify-center mt-40">
         <div className="">
           <Content

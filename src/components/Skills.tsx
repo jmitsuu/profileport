@@ -45,7 +45,7 @@ const devImages = [
 ];
 export function Skills() {
   return (
-    <div className="transition-all md:my-20 border-b border-[#38bdf8] py-20 ">
+    <section className="transition-all md:my-20 bg-tecMediumLight rounded-md  py-20" id='skills'>
       <h1 className="text-slate-300 text-center dark:text-tecHeavy font-bold text-5xl text-pretty uppercase mb-10 flex items-center justify-center gap-x-2">
         <TitleIcon cn="h-9" />
         <span className="border-b border-[#38bdf8] pb-2 ">
@@ -70,6 +70,6 @@ export function Skills() {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 }

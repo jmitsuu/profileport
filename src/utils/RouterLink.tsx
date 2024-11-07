@@ -1,19 +1,19 @@
 export default function RouterLink() {
   const routeLink = [
     {
-      path: '/',
+      path: '/#home',
       title: 'Home',
     },
     {
-      path: '/skills',
-      title: 'Skills',
+      path: '/#about',
+      title: 'Sobre',
     },
     {
-      path: '/projects',
+      path: '/#projects',
       title: 'Projetos',
     },
     {
-      path: '/contact',
+      path: '/#contact',
       title: 'Contato',
     },
   ];

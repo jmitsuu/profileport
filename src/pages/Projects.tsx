@@ -51,7 +51,7 @@ export function Projects() {
         />
       </Helmet>
 
-      <div className="my-20">
+      <section className="my-20" id='projects'>
         <h1 className="text-center text-slate-300 uppercase font-bold text-5xl mb-10 flex items-center justify-center gap-x-2">
           <TitleIcon cn="h-9" />
           <span className="border-b border-[#38bdf8] pb-2 ">
@@ -66,7 +66,7 @@ export function Projects() {
         </div>
 
         <div className="mt-40">
-          <ul className="grid md:grid-cols-3 md:gap-y-0 gap-y-10">
+          <ul className="grid md:grid-cols-3 md:gap-y-5 gap-y-10">
             {projects.map((project) => {
               return (
                 <a
@@ -102,7 +102,7 @@ export function Projects() {
             })}
           </ul>
         </div>
-      </div>
+      </section>
     </HelmetProvider>
   );
 }

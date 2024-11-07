@@ -60,7 +60,7 @@ const courses = [
 ];
 export function AboutMe() {
   return (
-    <section className="w-full min-h-screen  border-t border-[#38bdf8] pt-40">
+    <section className="w-full min-h-screen  border-t border-[#38bdf8] pt-40" id='about'>
       <div className="w-full lg:flex flex-1 mb-10">
         <div className="flex flex-col items-center gap-y-3">
           <div className="rounded-full p-2 border-2 border-[#38bdf8]">
