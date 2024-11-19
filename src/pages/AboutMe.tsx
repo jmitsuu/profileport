@@ -60,8 +60,8 @@ const courses = [
 ];
 export function AboutMe() {
   return (
-    <section className="w-full min-h-screen  border-t border-[#38bdf8] pt-40" id='about'>
-      <div className="w-full lg:flex flex-1 mb-10">
+    <section className="w-full min-h-screen  border-t border-[#38bdf8] mt-20" id='about'>
+      <div className="w-full lg:flex flex-1 mb-10  pt-20">
         <div className="flex flex-col items-center gap-y-3">
           <div className="rounded-full p-2 border-2 border-[#38bdf8]">
             <img
@@ -75,8 +75,8 @@ export function AboutMe() {
           </h1>
           <SocialMedia />
         </div>
-        <div className="md:ml-52 lg:px-0 p-6 flex-col justify-center items-center">
-          <h1 className="text-slate-300 text-3xl uppercase font-bold md:text-left text-center flex items-center gap-x-2">
+        <div className="md:ml-52 lg:px-0 p-6 flex-col justify-center items-center md:text-left text-center">
+          <h1 className="text-slate-300  text-3xl uppercase font-bold md:text-left text-center flex items-center md:justify-start justify-center gap-x-2">
            <TitleIcon cn='h-6' /> Sobre
           </h1>
           <article className="mt-10">
@@ -93,9 +93,9 @@ export function AboutMe() {
           </article>
         </div>
       </div>
-      <div className="md:flex  pt-20 justify-between w-full  dark:border-tecSuperLight px-5 py-10">
+      <div className="md:flex  pt-10 justify-between w-full  dark:border-tecSuperLight px-5 py-10">
         <div className="md:w-[530px]">
-          <div className="flex items-center">
+          <div className="flex items-center lg:justify-start justify-center">
             <PiBagSimpleFill className="w-8 h-8 mr-2 text-slate-300 dark:text-tecHeavy" />
             <h1 className=" text-slate-300 dark:text-tecHeavy border-b border-[#38bdf8] dark:border-tecHeavy  font-bold text-2xl">
               Trabalhos
@@ -114,8 +114,8 @@ export function AboutMe() {
             );
           })}
         </div>
-        <div className="md:w-[530px] md:mt-0 mt-10">
-          <div className="flex items-center ">
+        <div className="md:w-[530px] md:mt-0 my-20">
+          <div className="flex items-center lg:justify-start justify-center">
             <IoSchoolSharp className="w-8 h-8 mr-2 text-slate-300 dark:text-tecHeavy" />
             <h1 className=" text-slate-300 dark:text-tecHeavy border-b border-[#38bdf8] dark:border-tecHeavy  font-bold text-2xl">
               Estudos

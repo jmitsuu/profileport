@@ -51,8 +51,8 @@ export function Projects() {
         />
       </Helmet>
 
-      <section className="my-20" id='projects'>
-        <h1 className="text-center text-slate-300 uppercase font-bold text-5xl mb-10 flex items-center justify-center gap-x-2">
+      <section className="mt-20" id='projects'>
+        <h1 className="text-center text-slate-300 uppercase font-bold md:text-5xl text-3xl mb-10 flex items-center justify-center gap-x-2">
           <TitleIcon cn="h-9" />
           <span className="border-b border-[#38bdf8] pb-2 ">
             Projetos
@@ -65,7 +65,7 @@ export function Projects() {
           />
         </div>
 
-        <div className="mt-40">
+        <div className="md:mt-40 mt-20">
           <ul className="grid md:grid-cols-3 md:gap-y-5 gap-y-10">
             {projects.map((project) => {
               return (

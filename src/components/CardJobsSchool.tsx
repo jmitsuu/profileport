@@ -24,7 +24,7 @@ export function CardJobsSchool({
         </div>
         <dl className=" flex flex-auto flex-wrap gap-x-2 ">
           <dt className="sr-only">Company</dt>
-          <dd className="w-full flex-none md:text-lg text-md font-bold text-slate-300 dark:text-tecHeavy">
+          <dd className="w-full flex-none md:text-lg text-sm font-bold text-slate-300 dark:text-tecHeavy">
             {company}
           </dd>
           <dt className="sr-only">Role</dt>
@@ -32,7 +32,7 @@ export function CardJobsSchool({
             {role}
           </dd>
           <dt className="sr-only">Date</dt>
-          <dd className="ml-auto text-md text-zinc-400 dark:text-zinc-500 ">
+          <dd className="ml-auto md:text-md text-xs text-zinc-400 dark:text-zinc-500 ">
             <time dateTime={initDate}>
               {initDate}
             </time>
