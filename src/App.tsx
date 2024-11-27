@@ -11,13 +11,18 @@ function App() {
   const location = useLocation();
   useEffect(() => {
     if (location.hash) {
-      const elemento = document.getElementById(location.hash.replace("#", ""));
-      console.log(elemento)
+      const elemento = document.getElementById(
+        location.hash.replace('#', ''),
+      );
+      console.log(elemento);
       if (elemento) {
-        elemento.scrollIntoView({ behavior: "smooth" });
+        elemento.scrollIntoView({
+          behavior: 'smooth',
+        });
       }
     }
   }, [location]);
+
   return (
     <main className=" min-h-screen bg-gradient-radial from-70% from-tecHeavy via-100% via-tecMedium to-tecHeavy dark:bg-white">
       <div className=" h-full flex flex-col relative   container  mx-auto min-h-screen  ">

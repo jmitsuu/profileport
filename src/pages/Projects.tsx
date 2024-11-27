@@ -66,16 +66,16 @@ export function Projects() {
         </div>
 
         <div className="md:mt-40 mt-20">
-          <ul className="grid md:grid-cols-3 md:gap-y-5 gap-y-10">
+          <ul className="grid md:grid-cols-2 lg:grid-cols-3 md:gap-y-5 gap-y-10">
             {projects.map((project) => {
               return (
                 <a
                   key={project.title}
                   href={`${project.link}`}
                   target="blank"
-                  className="relative flex justify-center "
+                  className="relative flex justify-center max-w-96 lg:mx-0 mx-auto"
                 >
-                  <span className="w-60 -top-2 border-4 border-[#38bdf8] absolute rounded-t-md"></span>
+                  <span className="w-60 md:w-40 -top-2 border-4 border-[#38bdf8] absolute rounded-t-md"></span>
                   <li className="md:h-72 md:w-80 h-full mx-6 md:py-6 md:px-6 px-4 py-3 rounded-md md:mb-0 mb-5  flex flex-col justify-center border bg-tecMediumLight border-tecMedium dark:border group hover:bg-tecMediumLight/40 dark:hover:bg-tecLight/50 transition duration-200">
                     <div className="mb-5 rounded-full border  border-[#38bdf8] flex justify-center items-center h-12 w-12 p-2">
                       {project.icon}

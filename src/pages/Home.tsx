@@ -23,10 +23,10 @@ export function Home() {
   }, [scrollY]);
   return (
     <section
-      className="w-full relative lg:min-h-[800px] min-h-[550px]"
+      className="w-full relative xl:min-h-[700px] min-h-[550px]"
       id="home"
     >
-      <div className="mx-auto  lg:flex md:justify-between justify-center mt-20">
+      <div className="mx-auto  md:flex md:justify-between justify-center mt-20">
         <div className="">
           <Content
             title={'Desenvolvedor Front-End.'}
@@ -40,7 +40,7 @@ export function Home() {
           alt="dev img"
           width={444}
           height={444}
-          className="lg:w-[800px] lg:h-[400px] md:-rotate-6 md:mt-0 mt-10 md:static absolute sm:-left-0 -left-7"
+          className="xl:w-[800px] md:h-[400px] md:-rotate-6 md:mt-0 mt-10 md:static absolute sm:-left-0 -left-7"
         />
       </div>
     </section>

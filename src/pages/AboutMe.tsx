@@ -61,7 +61,7 @@ const courses = [
 export function AboutMe() {
   return (
     <section className="w-full min-h-screen  border-t border-[#38bdf8] mt-20" id='about'>
-      <div className="w-full lg:flex flex-1 mb-10  pt-20">
+      <div className="w-full md:flex flex-1 mb-10  pt-20">
         <div className="flex flex-col items-center gap-y-3">
           <div className="rounded-full p-2 border-2 border-[#38bdf8]">
             <img
@@ -80,7 +80,7 @@ export function AboutMe() {
            <TitleIcon cn='h-6' /> Sobre
           </h1>
           <article className="mt-10">
-            <p className="text-slate-400 dark:text-tecMedium md:text-2xl">
+            <p className="text-slate-400 dark:text-tecMedium xl:text-xl">
               Trabalho com tecnologias
               relacionadas ao desenvolvimento
               Front End, desde 2022. Realizei
@@ -93,8 +93,8 @@ export function AboutMe() {
           </article>
         </div>
       </div>
-      <div className="md:flex  pt-10 justify-between w-full  dark:border-tecSuperLight px-5 py-10">
-        <div className="md:w-[530px]">
+      <div className="md:flex md:gap-x-10 pt-10 justify-between w-full  dark:border-tecSuperLight px-5 py-10">
+        <div className="xl:w-[530px] lg:w-[400px] md:w-[380px]">
           <div className="flex items-center lg:justify-start justify-center">
             <PiBagSimpleFill className="w-8 h-8 mr-2 text-slate-300 dark:text-tecHeavy" />
             <h1 className=" text-slate-300 dark:text-tecHeavy border-b border-[#38bdf8] dark:border-tecHeavy  font-bold text-2xl">
@@ -114,7 +114,7 @@ export function AboutMe() {
             );
           })}
         </div>
-        <div className="md:w-[530px] md:mt-0 my-20">
+        <div className="xl:w-[530px] lg:w-[400px] md:w-[380px] md:mt-0 my-20">
           <div className="flex items-center lg:justify-start justify-center">
             <IoSchoolSharp className="w-8 h-8 mr-2 text-slate-300 dark:text-tecHeavy" />
             <h1 className=" text-slate-300 dark:text-tecHeavy border-b border-[#38bdf8] dark:border-tecHeavy  font-bold text-2xl">

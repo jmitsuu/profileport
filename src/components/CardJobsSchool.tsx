@@ -24,11 +24,11 @@ export function CardJobsSchool({
         </div>
         <dl className=" flex flex-auto flex-wrap gap-x-2 ">
           <dt className="sr-only">Company</dt>
-          <dd className="w-full flex-none md:text-lg text-sm font-bold text-slate-300 dark:text-tecHeavy">
+          <dd className="w-full flex-none md:text-base text-sm font-bold text-slate-300 dark:text-tecHeavy">
             {company}
           </dd>
           <dt className="sr-only">Role</dt>
-          <dd className="md:text-base text-xs  text-slate-400 dark:text-tecHeavy">
+          <dd className="md:text-sm text-xs  text-slate-400 dark:text-tecHeavy">
             {role}
           </dd>
           <dt className="sr-only">Date</dt>
