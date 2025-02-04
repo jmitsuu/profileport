@@ -71,7 +71,7 @@ export function Projects() {
                   className="relative flex justify-center max-w-96 lg:mx-0 mx-auto"
                 >
                   <span className="w-60 md:w-40 -top-2 border-4 border-[#38bdf8] absolute rounded-t-md"></span>
-                  <li className="md:h-72 md:w-80 h-full mx-6 md:py-6 md:px-6 px-4 py-3 rounded-md md:mb-0 mb-5  flex flex-col justify-center border bg-tecMediumLight border-tecMedium dark:border group hover:bg-tecMediumLight/40 dark:hover:bg-tecLight/50 transition duration-200">
+                  <li className="md:h-72 md:w-80 w-72 h-full mx-6 md:py-6 md:px-6 px-4 py-3 rounded-md md:mb-0 mb-5  flex flex-col justify-center border bg-tecMediumLight border-tecMedium dark:border group hover:bg-tecMediumLight/40 dark:hover:bg-tecLight/50 transition duration-200">
                     <div className="mb-5 rounded-full border  border-[#38bdf8] flex justify-center items-center h-12 w-12 p-2">
                       {project.icon}
                     </div>
