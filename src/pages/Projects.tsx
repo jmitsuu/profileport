@@ -22,7 +22,7 @@ const projects = [
     tagUrl: 'vercel.app',
     title: 'Movies',
     description:
-      'Desenvolvido usando API Aberta de filmes, MOVIESDB. Apenas para visualização',
+      'Desenvolvido usando API Aberta de filmes, MOVIESDB. Apenas para visualização, no front foi usado VUEJS',
     link: 'https://movies-jmitsuu.vercel.app/',
   },
   {
@@ -32,7 +32,7 @@ const projects = [
     tagUrl: 'vercel.app',
     title: 'Shopping',
     description:
-      'Desenvolvido usando uma API feita em NodeJS , contendo uma lista de produtos',
+      'backend foi usado NodeJS para criar uma api contendo uma lista de produtos, no front foi usado ReactJS',
     link: 'https://shopping-v-7c8p.vercel.app/',
   },
 ];
