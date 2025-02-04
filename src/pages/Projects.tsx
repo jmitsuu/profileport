@@ -1,8 +1,5 @@
 import { Content } from '../components/Content';
-import {
-
-  BiSolidShoppingBags,
-} from 'react-icons/bi';
+import { BiSolidShoppingBags } from 'react-icons/bi';
 import { IoIosLink } from 'react-icons/io';
 import {
   Helmet,
@@ -10,16 +7,14 @@ import {
 } from 'react-helmet-async';
 import { TitleIcon } from '../components/icon/TitleIcon';
 const projects = [
-  // {
-  //   icon: (
-  //     <BiSolidMoviePlay className="h-8 w-8 text-slate-300 dark:text-tecHeavy" />
-  //   ),
-  //   tagUrl: 'reviews.app',
-  //   title: 'Movies Review',
-  //   description:
-  //     'Desenvolvido usando API de filmes, MOVIESDB e integrando com uma API simples, para cadastro dos reviews.',
-  //   link: 'https://yourreviews.app.jairo3478.c35.integrator.host/',
-  // },
+  {
+    icon: '',
+    tagUrl: 'Em desenvolvimento',
+    title: 'Em desenvolvimento...',
+    description:
+      'Em desenvolvimento',
+    link: '',
+  },
   {
     icon: (
       <BiSolidShoppingBags className="h-8  w-8 text-slate-300 dark:text-tecHeavy" />
@@ -51,7 +46,7 @@ export function Projects() {
         />
       </Helmet>
 
-      <section className="mt-20" id='projects'>
+      <section className="mt-20" id="projects">
         <h1 className="text-center text-slate-300 uppercase font-bold md:text-5xl text-3xl mb-10 flex items-center justify-center gap-x-2">
           <TitleIcon cn="h-9" />
           <span className="border-b border-[#38bdf8] pb-2 ">
