@@ -10,16 +10,16 @@ import {
 } from 'react-helmet-async';
 import { TitleIcon } from '../components/icon/TitleIcon';
 const projects = [
-  {
-    icon: (
-      <BiSolidMoviePlay className="h-8 w-8 text-slate-300 dark:text-tecHeavy" />
-    ),
-    tagUrl: 'reviews.app',
-    title: 'Movies Review',
-    description:
-      'Desenvolvido usando API de filmes, MOVIESDB e integrando com uma API simples, para cadastro dos reviews.',
-    link: 'https://yourreviews.app.jairo3478.c35.integrator.host/',
-  },
+  // {
+  //   icon: (
+  //     <BiSolidMoviePlay className="h-8 w-8 text-slate-300 dark:text-tecHeavy" />
+  //   ),
+  //   tagUrl: 'reviews.app',
+  //   title: 'Movies Review',
+  //   description:
+  //     'Desenvolvido usando API de filmes, MOVIESDB e integrando com uma API simples, para cadastro dos reviews.',
+  //   link: 'https://yourreviews.app.jairo3478.c35.integrator.host/',
+  // },
   {
     icon: (
       <BiSolidShoppingBags className="h-8  w-8 text-slate-300 dark:text-tecHeavy" />
