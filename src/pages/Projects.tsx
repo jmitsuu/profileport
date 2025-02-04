@@ -1,6 +1,6 @@
 import { Content } from '../components/Content';
 import {
-  BiSolidMoviePlay,
+
   BiSolidShoppingBags,
 } from 'react-icons/bi';
 import { IoIosLink } from 'react-icons/io';
