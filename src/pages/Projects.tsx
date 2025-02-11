@@ -8,12 +8,13 @@ import {
 import { TitleIcon } from '../components/icon/TitleIcon';
 const projects = [
   {
-    icon: '',
+    icon: (
+      <BiSolidShoppingBags className="h-8  w-8 text-slate-300 dark:text-tecHeavy" />
+    ),
     tagUrl: 'Em desenvolvimento',
-    title: 'Em desenvolvimento...',
-    description:
-      'Em desenvolvimento',
-    link: '',
+    title: 'Shopping v2',
+    description: 'Em desenvolvimento, backend feito em NodeJS + mySQL + ReactTS e foi utilizado uma hospedagem para armazenamento das imagens. ',
+    link: 'https://shoppdevv2-bsvq22685-jmitsuus-projects.vercel.app/',
   },
   {
     icon: (
