@@ -14,7 +14,7 @@ const projects = [
     tagUrl: 'Em desenvolvimento',
     title: 'Shopping v2',
     description: 'Em desenvolvimento, backend feito em NodeJS + mySQL + ReactTS e foi utilizado uma hospedagem para armazenamento das imagens. ',
-    link: 'https://shoppdevv2-bsvq22685-jmitsuus-projects.vercel.app/',
+    link: 'https://shoppdevv2.vercel.app/',
   },
   {
     icon: (
