@@ -5,7 +5,7 @@ interface element {
 }
 export function Container({ children }: element) {
   return (
-    <div className=" min-h-screen  ">
+    <div className=" min-h-screen ">
       {children}
     </div>
   );

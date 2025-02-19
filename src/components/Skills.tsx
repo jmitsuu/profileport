@@ -1,9 +1,9 @@
 import { FaReact, FaVuejs } from 'react-icons/fa';
 import {
-  IoLogoJavascript,
   IoLogoCss3,
   // IoLogoNodejs,
 } from 'react-icons/io5';
+import { SiTypescript } from 'react-icons/si';
 import { TitleIcon } from './icon/TitleIcon';
 
 const devImages = [
@@ -23,9 +23,9 @@ const devImages = [
   },
   {
     textAlt: 'dev-3',
-    title: 'JavaScript',
+    title: 'TypeScript',
     icon: (
-      <IoLogoJavascript className="h-10 w-10 text-yellow-300" />
+      <SiTypescript className="h-10 w-10 text-blue-300" />
     ),
   },
   {
