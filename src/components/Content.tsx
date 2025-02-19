@@ -19,7 +19,7 @@ export function Content({
         <h1 className="text-white  dark:text-tecHeavy z-50 font-bold md:text-6xl text-3xl ">
           {subtitle}
         </h1>
-        <p className="text-slate-400 dark:text-tecMedium mt-5 xl:text-3xl lg:text-2xl text-md">
+        <p className="text-slate-400 dark:text-tecMedium mt-5 xl:text-2xl lg:text-2xl text-md">
           {content}
         </p>
       </div>

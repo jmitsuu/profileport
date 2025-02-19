@@ -80,7 +80,7 @@ export function AboutMe() {
            <TitleIcon cn='h-6' /> Sobre
           </h1>
           <article className="mt-10">
-            <p className="text-slate-400 dark:text-tecMedium xl:text-xl">
+            <p className="text-slate-400 dark:text-tecMedium xl:text-2xl">
               Trabalho com tecnologias
               relacionadas ao desenvolvimento
               Front End, desde 2022. Realizei

@@ -62,42 +62,42 @@ export function Projects() {
         </div>
 
         <div className="md:mt-40 mt-20">
-          <ul className="grid md:grid-cols-2 lg:grid-cols-3 md:gap-y-5 gap-y-10">
-            {projects.map((project) => {
-              return (
-                <a
-                  key={project.title}
-                  href={`${project.link}`}
-                  target="blank"
-                  className="relative flex justify-center max-w-96 lg:mx-0 mx-auto"
-                >
-                  <span className="w-60 md:w-40 -top-2 border-4 border-[#38bdf8] absolute rounded-t-md"></span>
-                  <li className="md:h-72 md:w-80 w-72 h-full mx-6 md:py-6 md:px-6 px-4 py-3 rounded-md md:mb-0 mb-5  flex flex-col justify-center border bg-tecMediumLight border-tecMedium dark:border group hover:bg-tecMediumLight/40 dark:hover:bg-tecLight/50 transition duration-200">
-                    <div className="mb-5 rounded-full border  border-[#38bdf8] flex justify-center items-center h-12 w-12 p-2">
-                      {project.icon}
-                    </div>
-                    <div>
-                      <h1 className="text-slate-300 dark:text-black">
-                        {' '}
-                        {project.title}
-                      </h1>
+  <ul className="grid md:grid-cols-2 lg:grid-cols-3 md:gap-y-5 gap-y-10">
+    {projects.map((project) => {
+      return (
+        <a
+          key={project.title}
+          href={`${project.link}`}
+          target="blank"
+          className="relative flex justify-center max-w-96 lg:mx-0 mx-auto"
+        >
+          <span className="w-60 md:w-40 -top-2 border-4 border-[#38bdf8] absolute rounded-t-md"></span>
+          <li className="md:h-72 md:w-80 w-72 h-full mx-6 md:py-6 md:px-6 px-4 py-3 rounded-md md:mb-0 mb-5 flex flex-col justify-center border bg-tecMediumLight border-tecMedium dark:border group hover:bg-tecMediumLight/40 dark:hover:bg-tecLight/50 transition-all duration-500 transform group-hover:rotate-y-180 group-hover:perspective-1000">
+            <div className="mb-5 rounded-full border border-[#38bdf8] flex justify-center items-center h-12 w-12 p-2">
+              {project.icon}
+            </div>
+            <div>
+              <h1 className="text-slate-300 dark:text-black">
+                {project.title}
+              </h1>
 
-                      <p className="text-slate-400 dark:text-tecHeavy mt-5 text-sm">
-                        {project.description}
-                      </p>
-                    </div>
-                    <div className="mt-5 flex items-center gap-1 ">
-                      <IoIosLink className="h-6 w-6 text-tecSuperLight dark:text-tecHeavy" />
-                      <h1 className="text-slate-300 dark:text-black ">
-                        {project.tagUrl}
-                      </h1>
-                    </div>
-                  </li>
-                </a>
-              );
-            })}
-          </ul>
-        </div>
+              <p className="text-slate-400 dark:text-tecHeavy mt-5 text-sm">
+                {project.description}
+              </p>
+            </div>
+            <div className="mt-5 flex items-center gap-1 ">
+              <IoIosLink className="h-6 w-6 text-tecSuperLight dark:text-tecHeavy" />
+              <h1 className="text-slate-300 dark:text-black ">
+                {project.tagUrl}
+              </h1>
+            </div>
+          </li>
+        </a>
+      );
+    })}
+  </ul>
+</div>
+
       </section>
     </HelmetProvider>
   );

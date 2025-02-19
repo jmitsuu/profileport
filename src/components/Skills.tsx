@@ -2,7 +2,7 @@ import { FaReact, FaVuejs } from 'react-icons/fa';
 import {
   IoLogoJavascript,
   IoLogoCss3,
-  IoLogoNodejs,
+  // IoLogoNodejs,
 } from 'react-icons/io5';
 import { TitleIcon } from './icon/TitleIcon';
 
@@ -35,13 +35,13 @@ const devImages = [
       <IoLogoCss3 className="h-10 w-10 text-blue-500" />
     ),
   },
-  {
-    textAlt: 'dev-5',
-    title: 'NodeJS',
-    icon: (
-      <IoLogoNodejs className="h-10 w-10 text-green-500" />
-    ),
-  },
+  // {
+  //   textAlt: 'dev-5',
+  //   title: 'NodeJS',
+  //   icon: (
+  //     <IoLogoNodejs className="h-10 w-10 text-green-500" />
+  //   ),
+  // },
 ];
 export function Skills() {
   return (
@@ -56,7 +56,7 @@ export function Skills() {
         </span>
       </h1>
 
-      <div className=" flex flex-wrap items-center justify-around py-4 gap-5 ">
+      <div className="grid md:grid-cols-4 grid-cols-2 items-center justify-around py-4 ">
         {devImages.map((img) => {
           return (
             <div
