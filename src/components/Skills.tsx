@@ -46,7 +46,7 @@ const devImages = [
 export function Skills() {
   return (
     <section
-      className="md:my-20 bg-tecMediumLight rounded-md  py-20"
+      className="md:my-20 bg-tecMediumLight  py-20"
       id="skills"
     >
       <h1 className="text-slate-300 text-center dark:text-tecHeavy font-bold text-5xl text-pretty uppercase mb-10 flex items-center justify-center gap-x-2">

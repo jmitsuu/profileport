@@ -7,6 +7,7 @@ import { AboutMe } from './pages/AboutMe';
 import { Skills } from './components/Skills';
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
+import { IoMdArrowDropup } from 'react-icons/io';
 function App() {
   const location = useLocation();
   useEffect(() => {
@@ -22,7 +23,9 @@ function App() {
       }
     }
   }, [location]);
-
+  function scroll() {
+    window.scrollTo(0, 0);
+  }
   return (
     <main className=" min-h-screen bg-gradient-radial from-70% from-tecHeavy via-100% via-tecMedium to-tecHeavy dark:bg-white">
       <div className=" h-full flex flex-col relative   container  mx-auto min-h-screen  ">
@@ -33,6 +36,14 @@ function App() {
           <Skills />
           <Projects />
         </Container>
+        <IoMdArrowDropup
+          tabIndex={0}
+          onClick={() => {
+            scroll();
+          }}
+          className=" z-50 bg-[#38bdf8] w-10 h-10 fixed right-2 bottom-2 rounded-md cursor-pointer"
+        />
+
         <Footer />
       </div>
     </main>

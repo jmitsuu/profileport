@@ -29,6 +29,7 @@ export function Home() {
       <div className="mx-auto  md:flex md:justify-between justify-center mt-20">
         <div className="">
           <Content
+          
             title={'Desenvolvedor Front-End.'}
             subtitle={'Jairo Miguel'}
             content={`Ola! criei esse portfólio para compartilhar alguns projetos desenvolvidos até o momento. Caso queiram realizar contato ou deixar sua sugestão sobre algo, minhas redes sociais estão logo abaixo.`}
