@@ -44,6 +44,7 @@ export function Home() {
           className="xl:w-[800px] md:h-[400px] md:-rotate-6 md:mt-0 mt-10 md:static absolute sm:-left-0 -left-7"
         />
       </div>
+      
     </section>
   );
 }

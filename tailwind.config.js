@@ -2,7 +2,6 @@
 export default {
   darkMode: 'class',
   content: [
-
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
   ],
@@ -16,10 +15,10 @@ export default {
         tecSuperLight: '#576289 ',
       },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-radial':
+          'radial-gradient(var(--tw-gradient-stops))',
       },
     },
-
   },
   plugins: [],
 };
