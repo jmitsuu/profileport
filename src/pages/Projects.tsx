@@ -1,5 +1,5 @@
 import { Content } from '../components/Content';
-import { BiSolidShoppingBags } from 'react-icons/bi';
+import { BiSolidShoppingBags, BiMoviePlay } from 'react-icons/bi';
 import { IoIosLink } from 'react-icons/io';
 import {
   Helmet,
@@ -12,19 +12,29 @@ const projects = [
       <BiSolidShoppingBags className="h-8  w-8 text-slate-300 dark:text-tecHeavy" />
     ),
     tagUrl: 'Em desenvolvimento',
-    title: 'Shopping v2',
+    title: 'Shopping v2 - ReactJS',
     description:
       'Em desenvolvimento, backend feito em NodeJS + mySQL + ReactTS e foi utilizado uma hospedagem para armazenamento das imagens. ',
     link: 'https://shoppdevv2.vercel.app/',
   },
   {
     icon: (
-      <BiSolidShoppingBags className="h-8  w-8 text-slate-300 dark:text-tecHeavy" />
+      <BiMoviePlay className="h-8  w-8 text-slate-300 dark:text-tecHeavy" />
+    ),
+    tagUrl: 'Integrator.host',
+    title: 'Movie v2 - ReactJS - in developing',
+    description:
+      ' API Aberta de filmes MOVIESDB. REACT + TANSTACK + TAILWIND ',
+    link: 'https://yourreviews.app.jairo3478.c35.integrator.host/',
+  },
+  {
+    icon: (
+      <BiMoviePlay className="h-8  w-8 text-slate-300 dark:text-tecHeavy" />
     ),
     tagUrl: 'vercel.app',
-    title: 'Movies',
+    title: 'Movies - VueJS',
     description:
-      'Desenvolvido usando API Aberta de filmes, MOVIESDB. Apenas para visualização, no front foi usado VUEJS',
+      'API Aberta de filmes MOVIESDB. VUEJS + TAILWIND',
     link: 'https://movies-jmitsuu.vercel.app/',
   },
   {
@@ -32,7 +42,7 @@ const projects = [
       <BiSolidShoppingBags className="h-8 w-8 text-slate-300 dark:text-tecHeavy" />
     ),
     tagUrl: 'vercel.app',
-    title: 'Shopping',
+    title: 'Shopping - ReactJS',
     description:
       'backend foi usado NodeJS para criar uma api contendo uma lista de produtos, no front foi usado ReactJS',
     link: 'https://shopping-v-7c8p.vercel.app/',
