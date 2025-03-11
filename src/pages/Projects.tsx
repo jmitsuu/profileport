@@ -1,5 +1,8 @@
 import { Content } from '../components/Content';
-import { BiSolidShoppingBags, BiMoviePlay } from 'react-icons/bi';
+import {
+  BiSolidShoppingBags,
+  BiMoviePlay,
+} from 'react-icons/bi';
 import { IoIosLink } from 'react-icons/io';
 import {
   Helmet,
@@ -72,8 +75,8 @@ export function Projects() {
           />
         </div>
 
-        <div className="md:mt-40 mt-20  flex justify-around">
-          <ul className="grid md:grid-cols-2 lg:grid-cols-3 md:gap-y-5 gap-y-10">
+        <div className="md:mt-40 mt-20  flex justify-center">
+          <ul className="flex flex-wrap  md:gap-y-5 gap-y-10">
             {projects.map((project) => {
               return (
                 <a
