@@ -1,13 +1,13 @@
-import { Header } from './components/Header';
-import { Footer } from './components/Footer';
+import { Header } from './components/header/Header';
+import { Footer } from './components/footer/Footer';
 import { Container } from './layout/Container';
-import { Home } from './pages/Home';
-import { Projects } from './pages/Projects';
-import { AboutMe } from './pages/AboutMe';
-import { Skills } from './components/Skills';
+import { Skills } from './components/bodyproject/Skills';
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import { IoMdArrowDropup } from 'react-icons/io';
+import { Home } from './pages/home/Home';
+import { AboutMe } from './pages/about/AboutMe';
+import { Projects } from './pages/projects/Projects';
 function App() {
   const location = useLocation();
   useEffect(() => {

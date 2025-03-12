@@ -1,4 +1,4 @@
-import { Content } from '../components/Content';
+
 import {
   BiSolidShoppingBags,
   BiMoviePlay,
@@ -8,7 +8,11 @@ import {
   Helmet,
   HelmetProvider,
 } from 'react-helmet-async';
-import { TitleIcon } from '../components/icon/TitleIcon';
+import { TitleIcon } from '../../components/icon/TitleIcon';
+import { Content } from '../../components/bodyproject/Content';
+import { useEffect } from 'react';
+import aboutAnimation from '../../utils/AboutSectionAnimations';
+
 const projects = [
   {
     icon: (
@@ -52,6 +56,14 @@ const projects = [
   },
 ];
 export function Projects() {
+  useEffect(() => {
+    const mq = window.matchMedia(
+      '(min-width: 1024px)',
+    );
+    if (mq.matches) {
+      aboutAnimation.cardProject();
+    }
+  }, []);
   return (
     <HelmetProvider>
       <Helmet>
@@ -83,7 +95,7 @@ export function Projects() {
                   key={project.title}
                   href={`${project.link}`}
                   target="blank"
-                  className="relative flex justify-center max-w-96 lg:mx-0 mx-auto"
+                  className="relative flex justify-center max-w-96 lg:mx-0 mx-auto cardProject"
                 >
                   <li className="md:h-72 md:w-80 w-72 h-full mx-6 md:py-6 md:px-6 px-4 py-3 rounded-md md:mb-0 mb-5 flex flex-col items-center justify-center border bg-tecMediumLight border-tecMedium dark:border  hover:bg-tecMediumLight/40 dark:hover:bg-tecLight/50 scale-100   hover:scale-105  z-50 transition-all duration-500 transform ">
                     <span className="w-60 md:w-40 -top-2 border-4 border-[#38bdf8] mx-auto absolute rounded-t-md"></span>

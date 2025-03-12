@@ -1,12 +1,15 @@
 import { NavLink } from 'react-router-dom';
-import RouterLink from '../utils/RouterLink';
-import { TitleIcon } from './icon/TitleIcon';
-import { Social } from '../utils/Social';
+import RouterLink from '../../utils/RouterLink';
+import { TitleIcon } from '../icon/TitleIcon';
+import { Social } from '../../utils/Social';
 
 export function Footer() {
   const { routeLink } = RouterLink();
   return (
-    <footer className="w-full mx-auto  pt-20 mt-40 border-t dark:border-tecSuperLight border-[#38bdf8]" id='contact'>
+    <footer
+      className="w-full mx-auto  pt-20 mt-40 border-t dark:border-tecSuperLight border-[#38bdf8]"
+      id="contact"
+    >
       <div>
         <h1 className="text-slate-300 text-center dark:text-tecHeavy font-bold text-2xl text-pretty uppercase mb-10 flex items-center justify-center gap-x-2">
           <TitleIcon cn="h-9" />

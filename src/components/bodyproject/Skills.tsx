@@ -4,7 +4,7 @@ import {
   // IoLogoNodejs,
 } from 'react-icons/io5';
 import { SiTypescript } from 'react-icons/si';
-import { TitleIcon } from './icon/TitleIcon';
+import { TitleIcon } from '../icon/TitleIcon';
 
 const devImages = [
   {
@@ -46,13 +46,13 @@ const devImages = [
 export function Skills() {
   return (
     <section
-      className="md:my-20 bg-tecMediumLight  py-20"
+      className="md:my-20 bg-tecMediumLight/45  py-20"
       id="skills"
     >
       <h1 className="text-slate-300 text-center dark:text-tecHeavy font-bold text-5xl text-pretty uppercase mb-10 flex items-center justify-center gap-x-2">
         <TitleIcon cn="h-9" />
         <span className="border-b border-[#38bdf8] md:text-5xl text-3xl uppercase font-bold md:text-left text-center flex items-center md:justify-start justify-center gap-x-2 ">
-          Habilidades
+          Tecnologías
         </span>
       </h1>
 

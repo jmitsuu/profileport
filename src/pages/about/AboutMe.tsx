@@ -1,13 +1,15 @@
-import tivit from '../assets/images/icons/tivit.png';
-import tracetec from '../assets/images/icons/tracetec.jpg';
-import tanimara from '../assets/images/icons/taniamara.jpg';
-import unifael from '../assets/images/icons/unifael.jpg';
+import tivit from '../../assets/images/icons/tivit.png';
+import tracetec from '../../assets/images/icons/tracetec.jpg';
+import tanimara from '../../assets/images/icons/taniamara.jpg';
+import unifael from '../../assets/images/icons/unifael.jpg';
 import { PiBagSimpleFill } from 'react-icons/pi';
 import { IoSchoolSharp } from 'react-icons/io5';
-import { CardJobsSchool } from '../components/CardJobsSchool';
-import { SocialMedia } from '../components/SocialMedia';
-import { Download } from '../components/Download';
-import { TitleIcon } from '../components/icon/TitleIcon';
+import { CardJobsSchool } from '../../components/bodyproject/CardJobsSchool';
+import { SocialMedia } from '../../components/bodyproject/SocialMedia';
+import { Download } from '../../components/bodyproject/Download';
+import { TitleIcon } from '../../components/icon/TitleIcon';
+import { useEffect } from 'react';
+import aboutAnimation from '../../utils/AboutSectionAnimations';
 
 const jobs = [
   {
@@ -59,8 +61,19 @@ const courses = [
   },
 ];
 export function AboutMe() {
+  useEffect(() => {
+    const mq = window.matchMedia(
+      '(min-width: 1024px)',
+    );
+    if (mq.matches) {
+      aboutAnimation.cardEducation();
+    }
+  }, []);
   return (
-    <section className="w-full min-h-screen  border-t border-[#38bdf8] mt-20" id='about'>
+    <section
+      className="w-full min-h-screen  border-t border-[#38bdf8] mt-20"
+      id="about"
+    >
       <div className="w-full md:flex flex-1 mb-10  pt-20">
         <div className="flex flex-col items-center gap-y-3">
           <div className="rounded-full p-2 border-2 border-[#38bdf8]">
@@ -75,9 +88,9 @@ export function AboutMe() {
           </h1>
           <SocialMedia />
         </div>
-        <div className="md:ml-52 lg:px-0 p-6 flex-col justify-center items-center md:text-left text-center">
+        <div className="md:ml-52 lg:px-4 rounded-md p-6 md:bg-tecMediumLight/45 flex-col justify-center items-center md:text-left text-center">
           <h1 className="text-slate-300  text-3xl uppercase font-bold md:text-left text-center flex items-center md:justify-start justify-center gap-x-2">
-           <TitleIcon cn='h-6' /> Sobre
+            <TitleIcon cn="h-6" /> Sobre
           </h1>
           <article className="mt-10">
             <p className="text-slate-400 dark:text-tecMedium xl:text-2xl">
@@ -94,7 +107,7 @@ export function AboutMe() {
         </div>
       </div>
       <div className="md:flex md:gap-x-10 pt-10 justify-between w-full  dark:border-tecSuperLight px-5 py-10">
-        <div className="xl:w-[530px] lg:w-[400px] md:w-[380px]">
+        <div className="xl:w-[530px] lg:w-[400px] md:w-[380px] cardEducation">
           <div className="flex items-center lg:justify-start justify-center">
             <PiBagSimpleFill className="w-8 h-8 mr-2 text-slate-300 dark:text-tecHeavy" />
             <h1 className=" text-slate-300 dark:text-tecHeavy border-b border-[#38bdf8] dark:border-tecHeavy  font-bold text-2xl">
@@ -114,7 +127,7 @@ export function AboutMe() {
             );
           })}
         </div>
-        <div className="xl:w-[530px] lg:w-[400px] md:w-[380px] md:mt-0 my-20">
+        <div className="xl:w-[530px] lg:w-[400px] md:w-[380px] md:mt-0 my-20 cardEducation">
           <div className="flex items-center lg:justify-start justify-center">
             <IoSchoolSharp className="w-8 h-8 mr-2 text-slate-300 dark:text-tecHeavy" />
             <h1 className=" text-slate-300 dark:text-tecHeavy border-b border-[#38bdf8] dark:border-tecHeavy  font-bold text-2xl">
