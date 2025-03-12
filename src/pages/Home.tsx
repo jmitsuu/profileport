@@ -26,7 +26,7 @@ export function Home() {
       className="w-full relative xl:min-h-[600px] min-h-[550px]"
       id="home"
     >
-      <div className="mx-auto  lg:flex justify-center mt-20">
+      <div className="mx-auto  lg:flex justify-between mt-20">
         <div className="">
           <Content
           
